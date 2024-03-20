@@ -39,7 +39,6 @@ const main = async () => {
         email: user.email,
         password: user.pass,
         name: user.name,
-        role: 'USER',
       },
     });
   });

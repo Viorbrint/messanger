@@ -22,7 +22,6 @@ model User {
   password String
 
   name String @unique
-  role Role @default(USER)
 
   followedBy User[]  @relation("UserFollows")
   following  User[]  @relation("UserFollows")
@@ -66,9 +65,4 @@ model Message {
   charId Int @unique
 
   textContent String
-}
-
-enum Role {
-  USER
-  ADMIN
 }
